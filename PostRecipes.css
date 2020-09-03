@@ -1,0 +1,31 @@
+
+
+.textarea{
+  width: 100% !important;
+}
+
+#description_form{
+  margin-bottom: 50px;
+  width: 100% !important;
+}
+
+.forms{
+  margin: 50px;
+}
+
+.form{
+	margin-bottom: 50px;
+}
+
+
+a.add_ingredient{
+  margin-bottom: 50px;
+  font-weight:bold;
+  text-decoration: underline;
+}
+
+a.add_step{
+  margin-bottom: 50px;
+  font-weight:bold;
+  text-decoration: underline;
+}

@@ -1,0 +1,37 @@
+#main_photo{
+  object-fit: cover;
+  margin-right: 50px;
+  margin-left: 50px;
+  width: 200px;
+  height: 200px;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+
+
+.flex_row{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  background-color: transparent;
+}
+
+
+.steps {
+  margin: 50px;
+  justify-content: space-evenly;
+}
+
+.one_step {
+  text-align: left;
+  width: 31%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.ingredient{
+  width: 200px;
+}
+
+
