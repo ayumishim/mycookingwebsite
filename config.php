@@ -14,7 +14,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-// sql to create table
+// sql to create table Recipes if it doesn't exist
 $sql = "CREATE TABLE Recipes (
 id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 title VARCHAR(255) NOT NULL,
@@ -28,6 +28,7 @@ if ($conn->query($sql) === TRUE) {
   //echo "Error creating table: " . $conn->error;
 }
 
+// sql to create table Ingredients if it doesn't exist
 $sql2 = "CREATE TABLE Ingredients (
 id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 recipe_id BIGINT NOT NULL,
@@ -42,6 +43,7 @@ if ($conn->query($sql2) === TRUE) {
   //echo "Error creating table: " . $conn->error;
 }
 
+// sql to create table Steps if it doesn't exist
 $sql3 = "CREATE TABLE Steps (
 id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 recipe_id BIGINT NOT NULL,

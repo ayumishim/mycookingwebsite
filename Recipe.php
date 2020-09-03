@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- This page shows one recipe which is clicked on top page-->
 <?php include 'config.php';?>
 <html>
     <head>
@@ -24,6 +25,7 @@
         </header>
 
         <?php
+            //Get the recipe title, description and image which matches to the recipe's id
             $sql = "SELECT * FROM Recipes WHERE id = " . $_GET['id'];
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
@@ -39,7 +41,9 @@
 
 
     	<div class="flex_colum">
+            <!-- To show the title of the recipe-->
         	<h2> <?= $title; ?> </h2><br>
+            <!-- To show the image and the ingredients of the recipe-->
             <div class="flex_row">
     			<p><img src="<?= $image_url ?>" id="main_photo"></p>
     			<div>
@@ -47,6 +51,7 @@
     				<h1>Ingredients</h1><br>
     				<table>
                         <?php
+                            //Get the ingredients which matches to the recipe's id
                             $sql = "SELECT * FROM Ingredients WHERE recipe_id = {$_GET['id']} ORDER BY i_order ASC";
                             $result = $conn->query($sql);
                             while($row = $result->fetch_assoc()){
@@ -60,9 +65,11 @@
     		         </table>
             	</div>
     	   </div>
+           <!-- To show the steps of the recipe-->
     	   <div class="steps">
             <h1>How To Make <?= $title ?> </h1><br>
                 <?php
+                    //Get the steps which matches to the recipe's id
                     $sql = "SELECT * FROM Steps WHERE recipe_id = {$_GET['id']} ORDER BY i_order ASC";
                     $result = $conn->query($sql);
                     $count = 0;

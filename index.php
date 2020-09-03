@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- This page is the top page which shows all recipes in the database-->
 <?php include 'config.php';?>
 
 <html>
@@ -25,6 +26,7 @@
 		<div class="flex_colum">
 			<h2><a>My Content</a></h2>
 			<?php
+				//Get all data from Recipes table
 				$sql = "SELECT * FROM Recipes";
 				$result = $conn -> query($sql) or die($conn->error);;
 				while ($row = $result->fetch_assoc()) {
@@ -32,6 +34,7 @@
 					$title = $row["title"];
 			        $description = $row["description"];
 			        $image_url = $row["image_url"];?>
+			        <!-- Show title, description and image data of each recipe in Recipe table--> 
 				    <div class="flex_row">
 				    	<p><a href="/Recipe.php?id=<?= $recipe_id ?>"><img src="<?= $image_url ?>" class="food_photo"></a></p>
 						<div>

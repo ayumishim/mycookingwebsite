@@ -1,4 +1,6 @@
 <!doctype html>
+<!-- This page is to register a recipe to the database-->
+
 <?php include 'config.php';?>
 <html>
 
@@ -23,8 +25,7 @@
             </nav>
         </header>
 
-        <?php error_log("test"); ?>
-
+        <!-- div to put in a list when adding Ingredients.-->
         <div id="field_template" style="display:none;">
             <div class="ingredient_field">
                 Ingredient Name: <input type="text" name="ingredient_name[]">
@@ -36,14 +37,14 @@
         </div>
 
 
-    
+        <!-- User input form for each data-->
         <div class="flex_colum">
             <form class="forms" action="RecipeFormHandler.php" method="post">
-                <h1><label for="fname">Put the title of your recipe:</label></h1><br>
+                <h1><label for="fname">Put the Title of Your Recipe:</label></h1><br>
                 <input class="form" type="text" name="title">
                 <h1><label for="fname">Put Description:</label></h1><br>
                 <textarea id="description_form" type="text" name="description"></textarea> 
-                <h1><label for="fname">Choose a Photo:</label></h1><br>
+                <h1><label for="fname">Put a Photo's Link:</label></h1><br>
                 <input class="form" type="text" name="image_url" ><br>
                 <h1><label for="fname">Put Ingredients:</label></h1><br>
                 <div class="ingredient_fields"></div>
