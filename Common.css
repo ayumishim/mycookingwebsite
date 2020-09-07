@@ -37,7 +37,31 @@ a {
    color: black;
 }
 
+a.hyperlink{
+  font-weight:bold;
+  text-decoration: underline;
+}
+a.hyperlink:link { /*アクセスしたことのないリンク*/
+  color: black;
+  text-decoration: underline;
+}
+a.hyperlink:hover {/*マウスが上に乗っている状態*/
+  color: #FF0099;　
+  text-decoration: underline;
+}
+a.hyperlink:visited {/*アクセスしたことのあるリンク*/
+  color: purple;
+  text-decoration: underline;
+}
+
+
 #top {
+   list-style: none;
+   margin: 0;
+   display: flex;
+}
+
+ul {
    list-style: none;
    margin: 0;
    display: flex;
@@ -58,6 +82,3 @@ nav {
   flex-direction: column;
   background-color: rgba(255,255,255,0.8);
 }
-
-
-

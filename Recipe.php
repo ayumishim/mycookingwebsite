@@ -4,8 +4,8 @@
 <html>
     <head>
     	<title>Ayumi Shimada's Website</title>
-    	<link rel="stylesheet" type="text/css" href="Common.css">
-        <link rel="stylesheet" type="text/css" href="Recipe.css">
+    	<link rel="stylesheet" type="text/css" href="Common.css?<?=time()?>">
+        <link rel="stylesheet" type="text/css" href="Recipe.css?<?=time()?>">
     	<script src="Index.js"></script>
     	<script src="/Vendor/jquery.js"></script>
     </head>
@@ -44,8 +44,8 @@
             <!-- To show the title of the recipe-->
         	<h2> <?= $title; ?> </h2><br>
             <!-- To show the image and the ingredients of the recipe-->
-            <div class="flex_row">
-    			<p><img src="<?= $image_url ?>" id="main_photo"></p>
+            <div class="steps">
+    			<img src="<?= $image_url ?>" id="main_photo">
     			<div>
                     <p> <?= $description ?> </p>
     				<h1>Ingredients</h1><br>

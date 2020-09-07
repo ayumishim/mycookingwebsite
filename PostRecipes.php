@@ -6,8 +6,8 @@
 
     <head>
         <title>Ayumi Shimada's Website</title>
-        <link rel="stylesheet" type="text/css" href="Common.css">
-        <link rel="stylesheet" type="text/css" href="PostRecipes.css">
+        <link rel="stylesheet" type="text/css" href="Common.css?<?=time()?>">
+        <link rel="stylesheet" type="text/css" href="PostRecipes.css?<?=time()?>">
         <script src="Index.js"></script>
         <script src="/Vendor/jquery.js"></script>
         <script src="PostRecipe.js"></script>
@@ -43,7 +43,7 @@
                 <h1><label for="fname">Put the Title of Your Recipe:</label></h1><br>
                 <input class="form" type="text" name="title">
                 <h1><label for="fname">Put Description:</label></h1><br>
-                <textarea id="description_form" type="text" name="description"></textarea> 
+                <textarea id="description_form" type="text" name="description" ></textarea> 
                 <h1><label for="fname">Put a Photo's Link:</label></h1><br>
                 <input class="form" type="text" name="image_url" ><br>
                 <h1><label for="fname">Put Ingredients:</label></h1><br>

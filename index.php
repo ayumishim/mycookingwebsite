@@ -5,7 +5,8 @@
 <html>
 	<head>
 		<title>Ayumi Shimada's Website</title>
-		<link rel="stylesheet" type="text/css" href="Index.css">
+		<link rel="stylesheet" type="text/css" href="Common.css?<?=time()?>">
+		<link rel="stylesheet" type="text/css" href="Index.css?<?=time()?>">
 		<script src="/Vendor/jquery.js"></script>
 	</head>
 
@@ -35,12 +36,12 @@
 			        $description = $row["description"];
 			        $image_url = $row["image_url"];?>
 			        <!-- Show title, description and image data of each recipe in Recipe table--> 
-				    <div class="flex_row">
-				    	<p><a href="/Recipe.php?id=<?= $recipe_id ?>"><img src="<?= $image_url ?>" class="food_photo"></a></p>
-						<div>
-							<p><a class="hyperlink" href="/Recipe.php?id=<?= $recipe_id ?>"><?= $title; ?></a></p>
-				        	<p> <?= $description ?> </p>
-						</div>
+				    <div>
+				    	<a href="/Recipe.php?id=<?= $recipe_id ?>">
+				    		<img src="<?= $image_url ?>" class="food_photo">
+				    	</a>
+						<a class="hyperlink" href="/Recipe.php?id=<?= $recipe_id ?>"><?= $title; ?></a><br>
+						<?= $description ?>
 					</div><br>
 				<?php }
 			?>
