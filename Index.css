@@ -5,3 +5,7 @@
   width: 200px;
   height: 200px;
 }
+
+.food_photo:hover {
+  border: 1px solid #777;
+}
