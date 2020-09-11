@@ -29,3 +29,18 @@ a.add_step{
   font-weight:bold;
   text-decoration: underline;
 }
+
+.agree_check{
+  font-size: 15px;
+}
+
+#overflow_area {
+  background: white;
+  color: gray;
+  font-size: 10px;
+  padding: 15px;
+  width: 50%;
+  height: 100px;
+  overflow: scroll;
+  border: 1px solid #ccc;
+}

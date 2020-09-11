@@ -46,5 +46,9 @@
 				<?php }
 			?>
 		</div>
+		
+		<footer>
+          <a href="Policy.html">Privacy Policy</a></p>
+        </footer>
 	</body>
 </html>

@@ -18,6 +18,13 @@ header {
     align-items: center;
 }
 
+footer{
+  float: right;
+  margin-right: 70px;
+  font-size: 15px;
+  text-decoration: underline;
+}
+
 h1 {
    margin: 0;
    padding: 0;
