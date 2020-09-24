@@ -1,5 +1,5 @@
 <?php
-$servername = "db";
+$servername = "/cloudsql/ayumin:asia-northeast1:ayumi";
 $username = "root";
 $password = "";
 $database = "Ayumi";
