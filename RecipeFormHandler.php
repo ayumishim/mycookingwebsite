@@ -37,7 +37,7 @@
         error_log("Error inserting recipe: " . $conn->error);
       }
     }
-    header("Location: http://localhost:8080/Recipe.php?id={$last_id}");
+    header("Location: /Recipe.php?id={$last_id}");
 	} else {
 	  echo "Error inserting recipe: " . $conn->error;
 	}

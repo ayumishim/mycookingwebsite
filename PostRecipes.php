@@ -14,7 +14,7 @@
     <body>
         <header>
             <h1>
-                <a href="Index.php">Ayumi Shimada's Website</a>
+                <a href="/">Ayumi Shimada's Website</a>
             </h1>
             <nav class="pc-nav">
                 <ul id="top">
@@ -65,7 +65,7 @@
         </script>
 
         <footer>
-          <a href="Policy.html">Privacy Policy</a></p>
+          <a href="public/Policy.html">Privacy Policy</a></p>
         </footer>
 
     </body>
