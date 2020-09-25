@@ -12,17 +12,7 @@
         <script src="public/PostRecipe.js"></script>
     </head>
     <body>
-        <header>
-            <h1>
-                <a href="/">Ayumi Shimada's Website</a>
-            </h1>
-            <nav class="pc-nav">
-                <ul id="top">
-                    <li><a href="PostRecipes.php">Post Recipe</a></li>
-                    <li><a href="public/contact.html">CONTACT</a></li>
-                </ul>
-            </nav>
-        </header>
+        <?php include 'header.php';?>
 
         <!-- div to put in a list when adding Ingredients.-->
         <div id="field_template" style="display:none;">

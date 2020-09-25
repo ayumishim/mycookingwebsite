@@ -9,19 +9,7 @@
 	</head>
 
 	<body>
-		<header>
-			<h1>
-				<a href="/">Ayumi's Cooking Website</a>
-			</h1>
-			<nav class="pc-nav">
-				<ul>
-		            <li><a href="/PostRecipes.php">Post Recipe</a></li>
-		            <li><a href="/public/contact.html">CONTACT</a></li>
-		        </ul>
-		    </nav>
-		</header>
-
-
+		<?php include 'header.php';?>
 		<div class="flex_colum">
 			<h2>CONTACT INFORMATION</h2>
 				 <h3>Name: Ayumi<br>

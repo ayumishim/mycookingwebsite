@@ -1,13 +1,15 @@
 <?php
-$servername = "/cloudsql/ayumin:asia-northeast1:ayumi";
+$servername = getenv('SERVERNAME') ? getenv('SERVERNAME') : null;
 $username = "root";
 $password = "";
 $database = "Ayumi";
+$socket = getenv('SOCKET') ? getenv('SOCKET') : NULL;
 
 // create database query: CREATE DATABASE IF NOT EXISTS Ayumi CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 
 // Create connection
-$conn =  new mysqli(null, $username, $password, $database, null, $servername);
+$conn =  new mysqli($servername, $username, $password, $database, null, $socket);
+
 
 // Check connection
 if ($conn->connect_error) {

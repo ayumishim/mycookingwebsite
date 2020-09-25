@@ -10,18 +10,7 @@
     </head>
 
     <body>
-
-        <header>
-        	<h1>
-        		<a href="/">Ayumi Shimada's Website</a>
-        	</h1>
-        	<nav class="pc-nav">
-        		<ul id="top">
-                    <li><a href="PostRecipes.php">Post Recipe</a></li>
-                    <li><a href="public/contact.html">CONTACT</a></li>
-                </ul>
-            </nav>
-        </header>
+        <?php include 'header.php';?>
 
         <?php
             //Get the recipe title, description and image which matches to the recipe's id
