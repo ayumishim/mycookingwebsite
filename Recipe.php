@@ -4,10 +4,9 @@
 <html>
     <head>
     	<title>Ayumi Shimada's Website</title>
-    	<link rel="stylesheet" type="text/css" href="Common.css?<?=time()?>">
-        <link rel="stylesheet" type="text/css" href="Recipe.css?<?=time()?>">
-    	<script src="Index.js"></script>
-    	<script src="/Vendor/jquery.js"></script>
+    	<link rel="stylesheet" type="text/css" href="public/Common.css?<?=time()?>">
+        <link rel="stylesheet" type="text/css" href="public/Recipe.css?<?=time()?>">
+    	<script src="public/Vendor/jquery.js"></script>
     </head>
 
     <body>
@@ -19,7 +18,7 @@
         	<nav class="pc-nav">
         		<ul id="top">
                     <li><a href="PostRecipes.php">Post Recipe</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="public/contact.html">CONTACT</a></li>
                 </ul>
             </nav>
         </header>

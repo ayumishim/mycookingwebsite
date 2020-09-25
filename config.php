@@ -7,7 +7,7 @@ $database = "Ayumi";
 // create database query: CREATE DATABASE IF NOT EXISTS Ayumi CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $database);
+$conn =  new mysqli(null, $username, $password, $database, null, $servername);
 
 // Check connection
 if ($conn->connect_error) {

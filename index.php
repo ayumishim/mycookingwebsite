@@ -5,9 +5,9 @@
 <html>
 	<head>
 		<title>Ayumi Shimada's Website</title>
-		<link rel="stylesheet" type="text/css" href="Common.css?<?=time()?>">
-		<link rel="stylesheet" type="text/css" href="Index.css?<?=time()?>">
-		<script src="/Vendor/jquery.js"></script>
+		<link rel="stylesheet" type="text/css" href="public/Common.css?<?=time()?>">
+		<link rel="stylesheet" type="text/css" href="public/Index.css?<?=time()?>">
+		<script src="public/Vendor/jquery.js"></script>
 	</head>
 
 	<body>

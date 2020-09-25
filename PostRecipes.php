@@ -6,11 +6,10 @@
 
     <head>
         <title>Ayumi Shimada's Website</title>
-        <link rel="stylesheet" type="text/css" href="Common.css?<?=time()?>">
-        <link rel="stylesheet" type="text/css" href="PostRecipes.css?<?=time()?>">
-        <script src="Index.js"></script>
-        <script src="/Vendor/jquery.js"></script>
-        <script src="PostRecipe.js"></script>
+        <link rel="stylesheet" type="text/css" href="public/Common.css?<?=time()?>">
+        <link rel="stylesheet" type="text/css" href="public/PostRecipes.css?<?=time()?>">
+        <script src="public/Vendor/jquery.js"></script>
+        <script src="public/PostRecipe.js"></script>
     </head>
     <body>
         <header>
@@ -20,7 +19,7 @@
             <nav class="pc-nav">
                 <ul id="top">
                     <li><a href="PostRecipes.php">Post Recipe</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="public/contact.html">CONTACT</a></li>
                 </ul>
             </nav>
         </header>
